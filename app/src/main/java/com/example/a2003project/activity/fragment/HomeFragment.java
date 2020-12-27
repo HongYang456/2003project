@@ -184,7 +184,6 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
         adapter.addAdapter(eightAdapter);
         adapter.addAdapter(nineAdapter);
         adapter.addAdapter(tenAdapter);
-//        adapter.addAdapter(evenAdapter);      //复用了，注释掉
         adapter.addAdapter(eventAdapter);
         recycler.setLayoutManager(virtualLayoutManager);
         recycler.setAdapter(adapter);
@@ -250,7 +249,27 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeCon
             foreAdapter.notifyDataSetChanged();
 
             fiveAdapter.notifyDataSetChanged();
+            List<HomeBean.DataDTO.NewGoodsListDTO> newGoodsList = homeBean.getData().getNewGoodsList();
+            mGoods.addAll(newGoodsList);
+            sixAdapter.notifyDataSetChanged();
 
+            servenAdapter.notifyDataSetChanged();
+
+            if (mGoods.size()>0){
+                List<HomeBean.DataDTO.HotGoodsListDTO> hotGoodsList = homeBean.getData().getHotGoodsList();
+                mHot.addAll(hotGoodsList);
+                eightAdapter.notifyDataSetChanged();
+            }
+            nineAdapter.notifyDataSetChanged();
+
+            List<HomeBean.DataDTO.TopicListDTO> topicList = homeBean.getData().getTopicList();
+            mTopic.addAll(topicList);
+            tenAdapter.notifyDataSetChanged();
+
+//            evenAdapter.notifyDataSetChanged();
+            List<HomeBean.DataDTO.CategoryListDTO> categoryList = homeBean.getData().getCategoryList();
+            mCateg.addAll(categoryList);
+            eventAdapter.notifyDataSetChanged();
         }
     }
 }
