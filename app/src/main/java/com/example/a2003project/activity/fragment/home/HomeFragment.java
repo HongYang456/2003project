@@ -1,4 +1,4 @@
-package com.example.a2003project.activity.fragment;
+package com.example.a2003project.activity.fragment.home;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -11,16 +11,16 @@ import com.alibaba.android.vlayout.layout.GridLayoutHelper;
 import com.alibaba.android.vlayout.layout.LinearLayoutHelper;
 import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.example.a2003project.R;
-import com.example.a2003project.activity.adapter.BannerAdapter;
-import com.example.a2003project.activity.adapter.EightAdapter;
-import com.example.a2003project.activity.adapter.EventAdapter;
-import com.example.a2003project.activity.adapter.FiveAdapter;
-import com.example.a2003project.activity.adapter.ForeAdapter;
-import com.example.a2003project.activity.adapter.SixAdapter;
-import com.example.a2003project.activity.adapter.SousuoAdapter;
-import com.example.a2003project.activity.adapter.TenAdapter;
-import com.example.a2003project.activity.adapter.ThreeAdapter;
-import com.example.a2003project.activity.adapter.TwoColumnAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.BannerAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.EightAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.EventAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.FiveAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.ForeAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.SixAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.SousuoAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.TenAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.ThreeAdapter;
+import com.example.a2003project.activity.adapter.homeadapter.TwoColumnAdapter;
 import com.example.a2003project.activity.bean.HomeBean;
 import com.example.a2003project.activity.constans.HomeConstarts;
 import com.example.a2003project.activity.presenter.HomePresenter;

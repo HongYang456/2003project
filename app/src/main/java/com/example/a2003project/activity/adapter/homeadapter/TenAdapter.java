@@ -1,4 +1,4 @@
-package com.example.a2003project.activity.adapter;
+package com.example.a2003project.activity.adapter.homeadapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,13 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.android.vlayout.DelegateAdapter;
 import com.alibaba.android.vlayout.LayoutHelper;
-import com.alibaba.android.vlayout.layout.SingleLayoutHelper;
 import com.example.a2003project.R;
 import com.example.a2003project.activity.bean.HomeBean;
 

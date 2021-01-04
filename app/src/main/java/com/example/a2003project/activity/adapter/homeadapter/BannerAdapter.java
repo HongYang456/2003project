@@ -1,4 +1,4 @@
-package com.example.a2003project.activity.adapter;
+package com.example.a2003project.activity.adapter.homeadapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

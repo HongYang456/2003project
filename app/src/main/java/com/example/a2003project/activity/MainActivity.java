@@ -11,11 +11,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.example.a2003project.R;
-import com.example.a2003project.activity.fragment.ClassifyFragment;
-import com.example.a2003project.activity.fragment.HomeFragment;
-import com.example.a2003project.activity.fragment.MyFragment;
-import com.example.a2003project.activity.fragment.Shopping_CartFragment;
-import com.example.a2003project.activity.fragment.SubjectFragment;
+import com.example.a2003project.activity.fragment.classify.ClassifyFragment;
+import com.example.a2003project.activity.fragment.home.HomeFragment;
+import com.example.a2003project.activity.fragment.my.MyFragment;
+import com.example.a2003project.activity.fragment.shopping.Shopping_CartFragment;
+import com.example.a2003project.activity.fragment.subject.SubjectFragment;
 
 import java.util.ArrayList;
 
@@ -37,11 +37,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         viewPager = findViewById(R.id.vp);
         radioGroup = findViewById(R.id.rg);
         fragments = new ArrayList<>();
-        fragments.add(new HomeFragment());
-        fragments.add(new SubjectFragment());
-        fragments.add(new ClassifyFragment());
-        fragments.add(new Shopping_CartFragment());
-        fragments.add(new MyFragment());
+        fragments.add(new HomeFragment());//TODO 首页
+        fragments.add(new SubjectFragment());// TODO 专题
+        fragments.add(new ClassifyFragment());//TODO 分类
+        fragments.add(new Shopping_CartFragment());// TODO 购物车
+        fragments.add(new MyFragment());// TODO 我的
+
         myFragmentAdapter = new MyFragmentAdapter(getSupportFragmentManager(), fragments);
         viewPager.setAdapter(myFragmentAdapter);
         radioGroup.setOnCheckedChangeListener(this);
